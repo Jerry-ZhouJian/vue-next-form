@@ -1,16 +1,15 @@
-中文 | [English](readme.en.md)
+[中文](readme.md) | English
 
 # vue-next-form
 
-基于 vue，使用了 element-plus 组件库封装的，通过配置文件驱动的，下一代动态表单
+Based on vue, the next generation dynamic form is encapsulated by the element-plus component library and driven by configuration files
 
-
-## 安装
+## install
 ```bash
 npm install --save vue-next-form
 ```
 
-## 使用
+## Usage
 ```vue
 <template>
   <VueNextForm v-model="bindValue" :formField="options.formField" ></VueNextForm>
