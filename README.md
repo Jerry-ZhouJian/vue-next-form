@@ -128,3 +128,10 @@ const options: FormProps = {
 }
 
 const bindValue = ref({})
+</script>
+```
+
+
+## 未来计划
+
+因为本人有工作，所以时间相对有限，后续会继续完善这个组件

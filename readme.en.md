@@ -127,3 +127,9 @@ const options: FormProps = {
 }
 
 const bindValue = ref({})
+</script>
+```
+
+## features
+
+Due to work commitments, my development time is limited. However, I will continue to improve and maintain this component in the future.
