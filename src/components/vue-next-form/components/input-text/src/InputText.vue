@@ -1,26 +1,20 @@
 <template>
-  <el-input
-    v-model="modelValue"
-    type="text"
-    :placeholder="props.placeholder"
-    :clearable="props.clearable"
-    :disabled="props.disabled"
-    :size="props.size"
-  ></el-input>
+  <el-input class="j-input-text" v-model="modelValue" type="text" :placeholder="props.placeholder" :clearable="props.clearable" :disabled="props.disabled" :size="props.size"></el-input>
 </template>
 
 <script setup lang="ts">
-import { ElInput } from "element-plus";
-import { InputTextPropsInterface } from "./InputTextProps";
+import { ElInput } from 'element-plus'
+import type { InputTextProps } from './InputTextProps'
 
-const modelValue = defineModel("modelValue", { type: String, default: "" });
+const modelValue = defineModel('modelValue', { type: String, default: '' })
 
-const props = withDefaults(defineProps<InputTextPropsInterface>(), {
-  placeholder: "请输入",
-  clearable: false,
-  disabled: false,
-  size: "default",
-});
+const props = withDefaults(defineProps<InputTextProps>(), {
+  placeholder: '请输入',
+})
 </script>
 
-<style></style>
+<style>
+.j-input-text {
+  width: 100%;
+}
+</style>

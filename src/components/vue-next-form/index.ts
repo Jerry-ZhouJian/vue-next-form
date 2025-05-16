@@ -1,3 +1,5 @@
 import VueNextForm from "./src/index.vue";
 
-export default VueNextForm;
+export { VueNextForm };
+
+export type { FormProps, FormItemProps } from "./src/index.vue";

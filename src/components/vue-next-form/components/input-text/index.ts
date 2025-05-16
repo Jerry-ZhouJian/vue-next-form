@@ -1,3 +1,5 @@
-import InputText from "./src/InputText.vue";
+import InputText from './src/InputText.vue'
 
-export { InputText };
+export { InputText }
+
+export type { InputTextProps } from './src/InputTextProps'
