@@ -1,4 +1,4 @@
-[中文](readme.md) | English
+[中文](./readme.md) | English
 
 # vue-next-form
 

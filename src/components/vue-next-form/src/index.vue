@@ -26,23 +26,18 @@
 <script setup lang="ts">
 import { ElRow, ElCol, ElForm, ElFormItem, type FormRules } from 'element-plus'
 
+import type { FormProps, FormItemProps } from "../types/formProps"
+
 import { InputText, InputNumber, SelectSingle, SelectSingleGroup, DatePicker, DatePickerRange, Text, RadioGroup, Checkbox, CheckboxGroup } from '../components'
 
-import type { InputNumberPropsInterface, InputTextProps, SelectSinglePropsInterface, SelectSingleGroupPropsInterface, DatePickerPropsInterface, DatePickerRangePropsInterface, TextProps, RadioGroupProps, CheckboxProps, CheckboxGroupProps } from '../components'
 import { ref, toRef, useTemplateRef, watchEffect } from 'vue'
 
 defineOptions({
   name: 'VueNextForm',
 })
 
-export type FormItemProps = InputTextProps | InputNumberPropsInterface | SelectSinglePropsInterface | SelectSingleGroupPropsInterface | DatePickerPropsInterface | DatePickerRangePropsInterface | TextProps | RadioGroupProps | CheckboxProps | CheckboxGroupProps
 
-export interface FormProps {
-  labelPosition?: 'left' | 'right' | 'top'
-  inline?: boolean
-  disabled?: boolean
-  formField: FormItemProps[]
-}
+
 
 const { labelPosition = 'left', inline = false, disabled = false, formField = [] } = defineProps<FormProps>()
 

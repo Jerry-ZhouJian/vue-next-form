@@ -19,15 +19,7 @@ const props = withDefaults(defineProps<CheckboxGroupProps>(), {})
 
 const modelValue = defineModel<optionsValue[]>()
 
-const _options = ref<optionsProp[]>([])
-
-if (props.getData !== undefined) {
-  _options.value = props.getData()
-} else if (props.options && props.options.length) {
-  _options.value = props.options
-} else {
-  _options.value = []
-}
+const _options = ref<optionsProp[]>(props.getData ? props.getData() : props.options || [])
 </script>
 
 <style></style>
