@@ -11,7 +11,7 @@
 <script setup lang="ts">
 import { ref, useTemplateRef } from 'vue'
 import { ElButton } from 'element-plus'
-import  {VueNextForm, type FormProps } from './components/vue-next-form'
+import { VueNextForm, type FormProps } from './components/vue-next-form'
 
 const options: FormProps = {
   formField: [

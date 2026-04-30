@@ -1,6 +1,6 @@
 {
   "name": "vue-next-form",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "type": "module",
   "description": "A configurable form component based on Vue 3 and Element Plus",
   "main": "./dist/vue-next-form.umd.js",
@@ -16,6 +16,7 @@
     "dist"
   ],
   "keywords": [
+    "vue-next-form",
     "vue3",
     "element-plus",
     "configurable-form"
